@@ -28,11 +28,12 @@
 </head>
 
 <body style="padding:0;margin:0;">
-    <iframe src="https://www.p6shop.xyz/index.html" frameborder="0" scrolling="yes" id="bdIframe"></iframe>
+    <iframe frameborder="0" scrolling="yes" id="bdIframe"></iframe>
+    <script>
+        const url = 'https://www.p6shop.xyz/index.html'
+        const queryString = window.location.href.split('#')[1]
+        bdIframe.src = url + '#' + queryString
+    </script>
 </body>
 
 </html>
-<script>
-
-
-</script>
